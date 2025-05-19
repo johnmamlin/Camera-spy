@@ -9,7 +9,8 @@ pip install --upgrade pip setuptools wheel
 
 pip install flask opencv-python requests
 
-RUn python app.py
+#RUn 
+python app.py
 
 # 4. Package your app as a single executable with PyInstaller
 python -m PyInstaller --onefile app.py
