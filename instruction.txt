@@ -1,0 +1,19 @@
+# 1. Create a virtual environment (if not done yet)
+python3 -m venv venv
+
+# 2. Activate the virtual environment
+source venv/bin/activate
+
+# 3. Install required packages inside the venv
+pip install --upgrade pip setuptools wheel
+
+pip install flask opencv-python requests
+
+
+# 4. Package your app as a single executable with PyInstaller
+python -m PyInstaller --onefile app.py
+
+# 5. Run the generated executable (from your project root)
+./dist/app
+
+
